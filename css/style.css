@@ -1,0 +1,161 @@
+/*   Global     */
+:root {
+    --swiper-theme-color: white;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    
+
+}
+body {
+    width: 100vw;
+    height: 100%;
+    background-image: url("/img/cartoon-curtain.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+a {
+    color: #D6926D;
+}
+
+
+/*          .logo        */
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    background-color: #989EB4;
+}
+
+.logo  {
+    padding-top: 20vh;
+    text-align: center;
+    
+}
+
+.logo p, p, h1, h2 {
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*          Nav         */
+
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+/*          #home        */
+
+#home {
+    height: 95vh;
+    text-align: center;
+
+}
+
+.cta-contact {
+    position: relative;
+    top: 200px;
+    background-color: #20222B;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+
+/*          #gallery      */
+
+#gallery {
+    height: 65vh;
+    text-align: center;
+}
+
+#gallery h2 {
+    margin-bottom: 30px;
+}
+
+.swiper {
+    height: 55vh;
+    width: 100vw;
+    
+}
+
+.swiper-slide img {
+    width: 75vw;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/*          #contact     */
+
+#contact {
+    height: 60vh;
+    text-align: center;
+    margin-bottom: 20vh;
+}
+
+#contact h2 {
+    margin-bottom: 70px;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.form {
+    width: 90%;
+    margin: 8px 0;
+    padding: 8px 10px;
+    border: 1px solid black;
+    background-color: #20222B;
+    border-radius: 10px;
+}
+
+.form-submit {
+    width: 90%;
+    background-color: #20222B;
+    color: #BBC4DA;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+
+
+/*          #about-me       */
+
+#about-me {
+    height: 20vh;
+}
+
+/*          #socials        */
+
+#socials {
+    height: 20vh;
+}
+
+
+/*          footer          */
+footer, footer a {
+    font-size: 0.35rem;
+}
