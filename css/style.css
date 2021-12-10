@@ -21,7 +21,7 @@
 body {
     width: 100vw;
     height: 100%;
-    background-image: url("img/cartoon-curtain.png");
+    background-image: url("../img/cartoon-curtain.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
