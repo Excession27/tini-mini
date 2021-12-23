@@ -172,7 +172,7 @@ function setLanguage(language) {
     navPrivacy.textContent = language.privacy[0];
 
 
-    if (document.location.pathname == "/index.html") {
+    try {
         contactTitle.textContent = language.contactTitle;
         contactBody.textContent = language.contactBody;
         contactBtn.textContent = language.contactBtn;
@@ -191,6 +191,8 @@ function setLanguage(language) {
         nameInput.setAttribute("placeholder", language.name);
         placeholderMessage.setAttribute("placeholder", language.placeholderMessage);
         sendMessageBtn.textContent = language.sendMessage;
+    } catch {
+        console.log("Not found");
     }
 
     if (document.location.pathname == "/pages/privacy.html") {
