@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -14,25 +14,35 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Tini-Mini Puppet Theater</title>
+    <title>Puppet Theater Tini-Mini</title>
 </head>
 
 <body>
 
 
     <div class="container">
-        <!-- <header id="header">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#galery">Galery</a>
-            <a href="#contact">Contact</a>
+        <header id="header">
+            <div class="controls">
+                
+                <img src="img/nl-flag.png" id="select-nl" class="lang-btn nl" alt="Dutch language button">
+                <img src="img/UK-flag.png" id="select-en" class="lang-btn gb" alt="English language button">
+                <div class="menu"><img src="img/Hamburger_icon.svg" alt="menu icon"></div>
+            </div>
+
+        <nav class="hidden">
+            <a id="nav__home" href="#home">Home</a>
+            <a id="nav__gallery" href="#gallery">Gallery</a>
+            <a id="nav__contact" href="#contact">Contact</a>
+            <a id="nav__privacy" href="pages/privacy.html">Privacy</a>
+
         </nav>
-    </header> -->
+
+    </header>
 
         <section id="home">
             <div class="logo">
-                <h1>Tini-Mini</h1>
-                <p>Puppet Theater</p>
+                <h1>Puppet Theater</p>
+                <h2>Tini-Mini</h1>
             </div>
             <a class="cta-contact" href="#contact">Contact me</a>
         </section>
@@ -106,20 +116,45 @@
 
         </section>
 
+        <section id="about-tini-mini">
+            <h2>About Tini-Mini</h2>
+            <p>Puppet theater is a form of theater with the use of puppets. This can be hand puppets, marionettes, stick puppets or other puppets (dolls). A marionette is a puppet that is moved by means of wires on arms, legs or other body parts. That is a person who acts purely in the service of someone else.</p>
+  
+                <p>Puppet theater is a space of fantasy. The game world and the puppet world are the two most colorful and beautiful worlds. The union/combination of these two worlds creates a world of puppet shows that children and adults enjoy.</p>
+                
+                <p>Puppet show serves man to express his experience of the world. The puppet's world is a world of endless imagination and imagination can do anything. The puppet triggers feelings as it develops a fantasy with the audience.</p>
+                
+                <p>Puppet theater Tini-Mini was established as an ambitious, mobile and open theater and was registered at the Chamber of Commerce on 15 April 2019 with the idea of offering puppet shows in the countries of the European Union and beyond. It occurs in all parts and corners of the Netherlands, Belgium and Germany.</p>
+                
+                <p>The theater is constantly working on its own profiling and qualitative progress, with its basic function - creating ever-increasing performances of puppets - marionettes and small theatrical forms for its most loyal audience.</p>
+                
+                <p>Puppets/marionettes are my passion. That is why I started Puppet theater Tini-Mini in 2019.</p>
+                <p id="signature">Sina</p>
+        </section>
+
         <section id="contact">
             <h2>Contact me</h2>
-            <form>
-                <input required class="form form-input" type="text" name="" id="client-name" placeholder="Your name">
-                <input required class="form form-input" type="email" name="" id="client-email" placeholder="Your email">
+            <p id="contact-text">
+                Nice that you want to get in contact with me. Fill in the form below or call me if you want
+                information quickly. Additional contact information is located below the form.
+            </p>
+            <form action="https://formsubmit.co/tinimini@gmail.com" method="POST">
+                <input required class="form form-input" type="text" name="name" id="client-name" placeholder="Your name">
+                <input required class="form form-input" type="email" name="email" id="client-email" placeholder="Your email">
                 <textarea required class="form form-textarea" id="client-inquiry" name="client-inquiry" id="" cols="30" rows="10"
                     placeholder="Please, don't hesitate to ask about anything" maxlength="560"></textarea>
-                <button class="form-submit" type="submit" onclick="sendEmail()">Send message</button>
+                <button class="form-submit" type="submit">Send message</button>
             </form>
+            <div class="contact-text contact-info">
+                <p>You can also contact me via email, telephone or in person.</p>
+                <p>Poppentheater Tini-Mni</p>
+                <p>Schout Kellenerstraat 92</p>
+                <p>6042 XH Roermond</p>
+                <p>Tel: +31(0)630107142</p>
+                <p>Email: tinimini@gmail.com</p>
+            </div>
         </section>
-
-        <section id="about-me">
-
-        </section>
+        
 
         <section id="socials">
 
@@ -134,6 +169,8 @@
     <footer>
         <a target="_blank" href="https://icons8.com/icon/-FgWk6B84qe5/puppet">Puppet</a> icon by <a target="_blank"
             href="https://icons8.com">Icons8</a>
+            <a href="https://www.vecteezy.com/free-vector/scroll">Scroll Vectors by Vecteezy</a>
+
     </footer>
 
 
@@ -142,6 +179,7 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script src="js/script.js"></script>
+    <script src="js/language.js"></script>
 
 
 </body>

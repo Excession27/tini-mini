@@ -22,6 +22,21 @@ $(document).ready(function () {
             });
         } // End if
     });
+
+    $("nav").toggle();
+
+
+    $(".menu").on('click', (event) => {
+        $("nav").animate({
+            opacity: 1,
+            paddingTop: "toggle",
+            paddingBottom: "toggle",
+            height: [ "toggle", "swing" ]
+          }, 1500, function() {
+            // Animation complete.
+          
+        });
+    })
 });
 
 const swiper = new Swiper('.swiper', {
@@ -37,19 +52,5 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
-
 });
 
-const clientName = $("#client-name");
-const clientEmail = $("#client-email");
-const clientInquiry = $("#client-inquiry");
-
-function isEmailValid(emailAdress) {
-    var EMAIL_REGEXP = new RegExp('^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$', 'i');
-    return EMAIL_REGEXP.test(emailAdress)
-}
-
-function sendEmail() {
-
-}
